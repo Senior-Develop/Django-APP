@@ -59,8 +59,8 @@ def proxy_driver(PROXIES):
     co.add_argument("--start-maximized")
 
     prefs = {"profile.default_content_settings.popups": 0,
-            "download.default_directory": download,
-            "directory_upgrade": True}
+             "download.default_directory": download,
+             "directory_upgrade": True}
     co.add_experimental_option("prefs", prefs)
     co1.add_argument("--headless")
 

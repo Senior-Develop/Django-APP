@@ -1,0 +1,23 @@
+{% extends "main/header.html" %}
+
+
+{% block content %}
+
+<h3>From home.html</h3>
+
+
+    Title
+
+    {% for loc in locations %}
+        <p>
+        {{loc.name}}<br>
+        {{loc.street_address_line1}}<br>	
+        {{loc.street_address_line2}}<br>	
+        {{loc.city}}, {{loc.state}} {{loc.zipcode}}<br>	
+        {{loc.lat}}, {{loc.long}}	
+        </p>
+    {% endfor %}
+	
+
+	
+{% endblock %}

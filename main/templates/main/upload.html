@@ -1,0 +1,24 @@
+{% extends "main/header.html" %}
+
+
+{% block content %}
+
+{% comment %}
+    <form method="POST" enctype="multipart/form-data">
+	{% csrf_token %}
+	<input type="file" name="loc_file">
+	<button type="submit">Upload</button>
+    </form>
+{% endcomment %}
+
+	<form method="POST" enctype="multipart/form-data">
+		{% csrf_token %}
+		{{ form.as_p }}
+		<button type="submit">Upload</button>
+	</form>
+
+{% comment %}
+	<p><a href="{% url 'home' %}">Return to home</a></p> 
+{% endcomment %}
+
+{% endblock %}

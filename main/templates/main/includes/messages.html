@@ -1,0 +1,9 @@
+{% if messages %}
+    {% for message in messages %}
+        <p>{{ message }}</p> 
+        <!-- <script>M.toast({html: "{{message}}", classes: 'blue rounded'})</script>
+        this is a popup msg in a css framework
+        could also use if statments for different colors etc. for diff msg types: success,
+        error, info, warning -->
+    {% endfor %}
+{% endif %}
